@@ -101,4 +101,5 @@ if (item.getPrice() > 300 && item.getDiscount() > 0 && item.getBarcode().charAt(
 Опис: Овој тест случај го покрива сценариото каде item.getPrice() > 300 е false, item.getDiscount() > 0 е true, и item.getBarcode().charAt(0) == '0' е true. Ја покрива гранката каде условот е false, и нема одземање од сумата.
 
 ### Објаснување на напишаните unit tests
-
+Користиме @ParameterizedTest за да ни помогне со тестирање на повеќе параметризирани inputs. Во првиот тест ги користиме тест случаевите од Every Branch критериумот и ги задаваме како аргументи во checkCart методот.
+Исто и за Multiple Condition критериумот, користиме параметризиран input за да ги покриеме сите случаеви.
